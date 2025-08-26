@@ -1,0 +1,86 @@
+/* work-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/work-sans-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* work-sans-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/work-sans-v23-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* work-sans-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/work-sans-v23-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root{
+  --color-white: hsl(0, 100%, 100%);
+  --color-purple100: hsl(275, 100%, 97%);
+  --color-purple600: hsl(292, 16%, 49%);
+  --color-purple950: hsl(292, 42%, 14%); 
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body{
+  height: 100vh;
+  background-color: var(--color-purple100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  background-color: var(--color-white);
+  width: 325px;
+  padding: 20px;
+  border-radius: 12px;
+}
+main img{
+  height: 20px;
+}
+#main-title{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+h1{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-purple950);
+  }
+h2{
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--color-purple950);
+}
+p{
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    color: var(--color-purple600);
+    padding: 0 10px;
+}
+.guestion-box{
+  border-bottom: 1px solid var(--color-purple100);
+}
+.question {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.question img{
+  height: 40px;
+}
