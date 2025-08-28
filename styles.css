@@ -65,7 +65,7 @@ main{
   }
 }
 main img{
-  height: 20px;
+  height: 30px;
 }
 #main-title{
   display: flex;
@@ -98,6 +98,7 @@ p{
   font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     color: var(--color-purple600);
     padding: 0 20px;
+    margin-bottom:20px;
     max-height: 0;
     overflow: hidden;
 }
